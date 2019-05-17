@@ -1,0 +1,21 @@
+body, h1, h2, h3, h4, h5, h6, hr, p,blockquote,dl, dt, dd, ul, ol, li,pre, form, fieldset, legend, button, input, textarea, th, td, img
+{
+	border:medium none;
+	margin: 0;
+	padding: 0;
+}
+
+body,button, input, select, textarea {font: 14px/1.5 '微软雅黑',tahoma, Srial, helvetica, sans-serif; }
+ul, ol { list-style: none; }
+
+
+
+.menu{ width:168px; height:295px; background:#e6f4fa; color:#075587;}
+.menu ul{ width:168px;}
+.menu ul li{ width:168px; background:url(/shetuan/images/index-menu-bg.gif) no-repeat; text-align:center}
+.menu ul li a{ height:26px; line-height:26px; color:#075587;text-decoration: none;}
+.menu ul li a:hover{ height:26px; line-height:26px; color:#000; text-decoration:none;}
+.menu .subMenuTitle{ background:url(/shetuan/images/index-menu-title.gif); text-align:center; height:27px; line-height:26px; color:#fff}
+.menu ul li ul{ width:168px;}
+.menu ul li ul li{ background:url(/shetuan/images/index-submenu-bg.gif);}
+

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC   
+     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"   
+     "http://struts.apache.org/dtds/struts-2.0.dtd">
+     
+     
+<struts>
+    <package name="liu" extends="struts-default">
+        <global-results>
+            <result name="succeed">/common/succeed.jsp</result>
+            <result name="msg">/common/msg.jsp</result>
+        </global-results>
+        
+        <action name="upload" class="com.util.upload" method="upload">
+             <result name="success">/upload/upload_re.jsp</result>
+        </action>
+        
+        <action name="index" class="indexAction" method="index">
+            <result name="success">/site/index.jsp</result>
+        </action>
+        
+        <action name="userReg" class="userAction" method="userReg">
+        </action>
+        <action name="userMana" class="userAction" method="userMana">
+             <result name="success">/admin/user/userMana.jsp</result>
+        </action>
+        <action name="userDel" class="userAction" method="userDel">
+        </action>
+        <action name="userDetail" class="userAction" method="userDetail">
+             <result name="success">/admin/user/userDetail.jsp</result>
+        </action>
+        
+        
+        
+        <action name="shetuanAdd" class="shetuanAction" method="shetuanAdd">
+        </action>
+        <action name="shetuanMana" class="shetuanAction" method="shetuanMana">
+             <result name="success">/admin/shetuan/shetuanMana.jsp</result>
+        </action>
+        <action name="shetuanDel" class="shetuanAction" method="shetuanDel">
+        </action>
+        <action name="shetuanAll" class="shetuanAction" method="shetuanAll">
+             <result name="success">/site/shetuan/shetuanAll.jsp</result>
+        </action>
+        <action name="shetuanDetailQian" class="shetuanAction" method="shetuanDetailQian">
+             <result name="success">/site/shetuan/shetuanDetailQian.jsp</result>
+        </action>
+        
+        
+        
+        <action name="shenqingAdd" class="shenqingAction" method="shenqingAdd">
+        </action>
+        <action name="shenqingMana" class="shenqingAction" method="shenqingMana">
+             <result name="success">/admin/shenqing/shenqingMana.jsp</result>
+        </action>
+        <action name="shenqingDel" class="shenqingAction" method="shenqingDel">
+        </action>
+        <action name="shenqingHuifu" class="shenqingAction" method="shenqingHuifu">
+        </action>
+        
+        
+        
+        <action name="liuyanAdd" class="liuyanAction" method="liuyanAdd">
+        </action>
+        <action name="liuyanMana" class="liuyanAction" method="liuyanMana">
+             <result name="success">/admin/liuyan/liuyanMana.jsp</result>
+        </action>
+        <action name="liuyanDel" class="liuyanAction" method="liuyanDel">
+        </action>
+        <action name="liuyanHuifu" class="liuyanAction" method="liuyanHuifu">
+        </action>
+        <action name="liuyanDetail" class="liuyanAction" method="liuyanDetail">
+             <result name="success">/site/liuyan/liuyanDetail.jsp</result>
+        </action>
+        <action name="liuyanAll" class="liuyanAction" method="liuyanAll">
+             <result name="success">/site/liuyan/liuyanAll.jsp</result>
+        </action>
+        
+        
+        
+        <action name="huodongAdd" class="huodongAction" method="huodongAdd">
+        </action>
+        <action name="huodongMana" class="huodongAction" method="huodongMana">
+             <result name="success">/admin/huodong/huodongMana.jsp</result>
+        </action>
+        <action name="huodongDel" class="huodongAction" method="huodongDel">
+        </action>
+        <action name="huodongPass" class="huodongAction" method="huodongPass">
+        </action>
+        <action name="huodongReject" class="huodongAction" method="huodongReject">
+        </action>
+        <action name="huodongAll" class="huodongAction" method="huodongAll">
+             <result name="success">/site/huodong/huodongAll.jsp</result>
+        </action>
+        <action name="huodongDetailQian" class="huodongAction" method="huodongDetailQian">
+             <result name="success">/site/huodong/huodongDetailQian.jsp</result>
+        </action>
+        
+        <action name="huodongShenheQuery" class="huodongAction" method="huodongShenheQuery">
+             <result name="success">/admin/huodong/huodongShenhe.jsp</result>
+        </action>
+        
+    </package>
+</struts>
